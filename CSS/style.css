@@ -1,0 +1,219 @@
+/*
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/Background_Flagge.jpg') repeat center center fixed;
+    background-size: 300px 200px;
+    color: #222;
+    position: relative;
+    min-height: 100vh;
+}
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/hintergrund-strecke.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #222;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: inherit;
+    filter: blur(8px) brightness(0.3);
+    z-index: -1;
+    pointer-events: none;
+}
+header {
+    
+
+    background: rgba(170, 17, 17, 0.445);
+    color: #ffffff6c;
+    padding: 1%;
+    text-align: left;
+    
+    
+    box-shadow: 0 2px 8px rgb(170, 17, 17)
+
+}
+
+
+
+
+main {
+    padding: 2rem;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(170, 17, 17);
+}
+
+#sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background: rgba(30, 30, 30, 0.95);
+    color: #fff;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.77,0,0.175,1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+#sideMenu.open {
+    transform: translateX(0);
+}
+#closeMenuBtn {
+    align-self: flex-end;
+    margin: 20px 20px 0 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#sideMenu nav {
+    width: 100%;
+    margin-top: 40px;
+}
+#sideMenu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 30px;
+}
+#sideMenu nav ul li {
+    margin: 20px 0;
+}
+#sideMenu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+}
+#sideMenu nav ul li a:hover {
+    color: #e53935;
+}
+.tracks-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+.track {
+    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    width: 200px;
+    margin: 0;
+    text-align: center;
+}
+.track-layout {
+    width: 120px;
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    background: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.track-layout[src$=".png"],
+.track-layout[src*="transparent"],
+.track-layout[src*="wittgenborn.jpg"] {
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    padding: 8px;
+}
+.track-layout[src$=".svg"],
+.track-layout[src*="prokart raceland.svg"] {
+    background: transparent !important;
+}
+.track-layout[src$="Ampfing.svg"] {
+    background: transparent !important;
+    width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.track-name, .location {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.track-name {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4px;
+    text-shadow: 2px 2px 4px rgb(170, 17, 17);
+}
+.location {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    text-shadow: 2px 2px 4px rgb(170, 17, 17);
+
+}
+.track-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.track-link:focus .track,
+.track-link:hover .track {
+    box-shadow: 0 4px 16px #e53935, 0 2px 8px rgba(0,0,0,0.15);
+    transform: scale(1.03);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+/* Kart-Bilder einfaches System */
+.kart-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kart-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
