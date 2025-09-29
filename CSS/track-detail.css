@@ -192,7 +192,14 @@ img[src*="template-placeholder"] {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
-    align-items: start;
+    align-items: stretch; /* Alle Elemente gleich hoch */
+}
+
+.kart-types-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: stretch; /* Alle Kart-Boxen gleich hoch */
 }
 
 .kart-type {
@@ -200,7 +207,9 @@ img[src*="template-placeholder"] {
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid rgba(170, 17, 17, 0.3);
-    margin-bottom: 1.5rem;
+    min-height: 200px; /* Mindesthöhe für einheitliche Größe */
+    display: flex;
+    flex-direction: column;
 }
 
 .kart-type h3 {
@@ -213,6 +222,7 @@ img[src*="template-placeholder"] {
 .spec-grid {
     display: grid;
     gap: 0.8rem;
+    flex-grow: 1; /* Füllt verfügbaren Platz aus */
 }
 
 .spec-item {
@@ -405,6 +415,10 @@ img[src*="template-placeholder"] {
     }
     
     .kart-specs {
+        grid-template-columns: 1fr;
+    }
+    
+    .kart-types-container {
         grid-template-columns: 1fr;
     }
     
