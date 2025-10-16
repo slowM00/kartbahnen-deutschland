@@ -1,75 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
-  <defs>
-    <linearGradient id="trackGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#aa1111;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#cc2222;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Background -->
-  <rect width="400" height="300" fill="#ffffff"/>
-  
-  <!-- Kartbahn Teningen Layout - 600m mit Höhenunterschied -->
-  
-  <!-- Start/Ziel Gerade -->
-  <path d="M 100 200 L 180 200" 
-        stroke="url(#trackGradient2)" 
-        stroke-width="20" 
-        fill="none" 
-        stroke-linecap="round"/>
-  
-  <!-- Erste Rechtskurve bergauf -->
-  <path d="M 180 200 Q 220 200 240 180 Q 260 160 270 140" 
-        stroke="url(#trackGradient2)" 
-        stroke-width="20" 
-        fill="none" 
-        stroke-linecap="round"/>
-  
-  <!-- Schnelle S-Kurve oben -->
-  <path d="M 270 140 Q 280 120 300 110 Q 320 100 330 90" 
-        stroke="url(#trackGradient2)" 
-        stroke-width="20" 
-        fill="none" 
-        stroke-linecap="round"/>
-  
-  <!-- Haarnadelkurve rechts -->
-  <path d="M 330 90 Q 350 80 350 100 Q 350 120 330 130" 
-        stroke="url(#trackGradient2)" 
-        stroke-width="20" 
-        fill="none" 
-        stroke-linecap="round"/>
-  
-  <!-- Bergab Sektion mit Kurve -->
-  <path d="M 330 130 Q 310 140 290 155 Q 270 170 250 180" 
-        stroke="url(#trackGradient2)" 
-        stroke-width="20" 
-        fill="none" 
-        stroke-linecap="round"/>
-  
-  <!-- Langsame Linkskurve -->
-  <path d="M 250 180 Q 220 190 190 185 Q 160 180 140 170" 
-        stroke="url(#trackGradient2)" 
-        stroke-width="20" 
-        fill="none" 
-        stroke-linecap="round"/>
-  
-  <!-- Schnelle Linksrechts-Kombi vor Ziel -->
-  <path d="M 140 170 Q 120 160 110 170 Q 100 180 105 190" 
-        stroke="url(#trackGradient2)" 
-        stroke-width="20" 
-        fill="none" 
-        stroke-linecap="round"/>
-  
-  <!-- Letzter Bogen zur Ziellinie -->
-  <path d="M 105 190 Q 103 200 100 200" 
-        stroke="url(#trackGradient2)" 
-        stroke-width="20" 
-        fill="none" 
-        stroke-linecap="round"/>
-  
-  <!-- Start/Ziel Markierung -->
-  <rect x="98" y="189" width="9" height="22" fill="white" opacity="0.9"/>
-  <rect x="98" y="189" width="4.5" height="22" fill="#aa1111"/>
-  <rect x="98" y="189" width="4.5" height="7.3" fill="white"/>
-  <rect x="98" y="203.7" width="4.5" height="7.3" fill="white"/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+     viewBox="0 0 800 600" xml:space="preserve">
+<style type="text/css">
+	.track{fill:none;stroke:rgb(177,17,17);stroke-width:32;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+
+<!-- Kartbahn Teningen - 600m Outdoor Track mit Höhenunterschied -->
+
+<!-- Start/Ziel Gerade -->
+<path class="track" d="M 150,420 L 280,420"/>
+
+<!-- Erste Rechtskurve bergauf -->
+<path class="track" d="M 280,420 Q 340,420 380,380 Q 420,340 450,300"/>
+
+<!-- Schnelle S-Kurve oben -->
+<path class="track" d="M 450,300 Q 480,260 520,240 Q 560,220 590,200"/>
+
+<!-- Enge Rechtskurve -->
+<path class="track" d="M 590,200 Q 620,180 640,180 Q 660,180 670,200"/>
+
+<!-- Weite Linkskurve nach unten -->
+<path class="track" d="M 670,200 Q 680,220 680,260 Q 680,300 660,340"/>
+
+<!-- Bergab Sektion -->
+<path class="track" d="M 660,340 Q 640,380 600,400 Q 560,420 520,430"/>
+
+<!-- Langsame Haarnadelkurve links -->
+<path class="track" d="M 520,430 Q 460,440 400,420 Q 340,400 300,360"/>
+
+<!-- Schnelle Links-Rechts Kombination -->
+<path class="track" d="M 300,360 Q 260,340 240,350 Q 220,360 220,380"/>
+
+<!-- Kurve vor der Ziellinie -->
+<path class="track" d="M 220,380 Q 220,400 200,410 Q 180,420 160,420"/>
+
+<!-- Letztes Stück zur Ziellinie -->
+<path class="track" d="M 160,420 L 150,420"/>
+
+<!-- Start/Ziel Markierung (Schachbrett) -->
+<rect x="148" y="407" width="14" height="26" fill="white" stroke="rgb(177,17,17)" stroke-width="2"/>
+<rect x="148" y="407" width="7" height="8.7" fill="rgb(177,17,17)"/>
+<rect x="155" y="415.7" width="7" height="8.7" fill="rgb(177,17,17)"/>
+<rect x="148" y="424.3" width="7" height="8.7" fill="rgb(177,17,17)"/>
+
 </svg>
