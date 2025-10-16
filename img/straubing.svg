@@ -1,43 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-     viewBox="0 0 800 600" xml:space="preserve">
+     viewBox="0 0 1000 600" xml:space="preserve">
 <style type="text/css">
-	.track{fill:none;stroke:rgb(177,17,17);stroke-width:35;stroke-linecap:round;stroke-linejoin:round;}
+	.track{fill:none;stroke:rgb(177,17,17);stroke-width:28;stroke-linecap:round;stroke-linejoin:round;}
 </style>
 
-<!-- Kartbahn Straubing - 1060m Outdoor Track -->
+<!-- Kartbahn Straubing - 1060m mit 3 konzentrischen Runden -->
 
-<!-- Start/Ziel Gerade -->
-<path class="track" d="M 120,380 L 280,380"/>
+<!-- Äußere Runde -->
+<!-- Linke lange Gerade -->
+<path class="track" d="M 150,520 L 150,100"/>
+<!-- Obere linke Kurve -->
+<path class="track" d="M 150,100 Q 150,50 200,50"/>
+<!-- Obere Gerade -->
+<path class="track" d="M 200,50 L 850,50"/>
+<!-- Obere rechte Kurve -->
+<path class="track" d="M 850,50 Q 900,50 900,100"/>
+<!-- Rechte lange Gerade -->
+<path class="track" d="M 900,100 L 900,520"/>
+<!-- Untere rechte Kurve -->
+<path class="track" d="M 900,520 Q 900,570 850,570"/>
+<!-- Untere Gerade (mit Start/Ziel links) -->
+<path class="track" d="M 850,570 L 200,570"/>
+<!-- Untere linke Kurve -->
+<path class="track" d="M 200,570 Q 150,570 150,520"/>
 
-<!-- Erste schnelle Rechtskurve -->
-<path class="track" d="M 280,380 Q 340,380 380,340 Q 420,300 460,270"/>
+<!-- Mittlere Runde -->
+<!-- Linke Gerade -->
+<path class="track" d="M 250,480 L 250,140"/>
+<!-- Obere linke Kurve -->
+<path class="track" d="M 250,140 Q 250,100 290,100"/>
+<!-- Obere Gerade -->
+<path class="track" d="M 290,100 L 760,100"/>
+<!-- Obere rechte Kurve -->
+<path class="track" d="M 760,100 Q 800,100 800,140"/>
+<!-- Rechte Gerade -->
+<path class="track" d="M 800,140 L 800,480"/>
+<!-- Untere rechte Kurve -->
+<path class="track" d="M 800,480 Q 800,520 760,520"/>
+<!-- Untere Gerade -->
+<path class="track" d="M 760,520 L 290,520"/>
+<!-- Untere linke Kurve -->
+<path class="track" d="M 290,520 Q 250,520 250,480"/>
 
-<!-- Langgezogene Kurve bergauf -->
-<path class="track" d="M 460,270 Q 520,240 560,200 Q 600,160 630,130"/>
+<!-- Innere kleine Runde -->
+<!-- Linke Gerade -->
+<path class="track" d="M 400,430 L 400,200"/>
+<!-- Obere linke Kurve -->
+<path class="track" d="M 400,200 Q 400,170 430,170"/>
+<!-- Obere Gerade -->
+<path class="track" d="M 430,170 L 620,170"/>
+<!-- Obere rechte Kurve -->
+<path class="track" d="M 620,170 Q 650,170 650,200"/>
+<!-- Rechte Gerade -->
+<path class="track" d="M 650,200 L 650,430"/>
+<!-- Untere rechte Kurve -->
+<path class="track" d="M 650,430 Q 650,460 620,460"/>
+<!-- Untere Gerade -->
+<path class="track" d="M 620,460 L 430,460"/>
+<!-- Untere linke Kurve -->
+<path class="track" d="M 430,460 Q 400,460 400,430"/>
 
-<!-- Haarnadelkurve oben rechts -->
-<path class="track" d="M 630,130 Q 660,110 680,120 Q 700,130 700,160 Q 700,190 680,210"/>
-
-<!-- Lange Gerade mit leichter Kurve -->
-<path class="track" d="M 680,210 L 560,280 Q 480,320 420,340"/>
-
-<!-- Schikane links-rechts -->
-<path class="track" d="M 420,340 Q 380,360 360,350 Q 340,340 350,310"/>
-
-<!-- S-Kurve nach unten -->
-<path class="track" d="M 350,310 Q 360,270 330,240 Q 300,210 260,220"/>
-
-<!-- Lange weite Linkskurve unten -->
-<path class="track" d="M 260,220 Q 220,230 180,260 Q 140,290 120,340"/>
-
-<!-- Letzte Kurve zur Start/Ziel -->
-<path class="track" d="M 120,340 Q 110,360 110,380 L 120,380"/>
-
-<!-- Start/Ziel Markierung (Schachbrett) -->
-<rect x="118" y="365" width="15" height="30" fill="white" stroke="rgb(177,17,17)" stroke-width="2"/>
-<rect x="118" y="365" width="7.5" height="10" fill="rgb(177,17,17)"/>
-<rect x="125.5" y="375" width="7.5" height="10" fill="rgb(177,17,17)"/>
-<rect x="118" y="385" width="7.5" height="10" fill="rgb(177,17,17)"/>
+<!-- Start/Ziel Markierung (Schachbrett) unten links auf der äußeren Runde -->
+<rect x="148" y="555" width="16" height="30" fill="white" stroke="rgb(177,17,17)" stroke-width="2"/>
+<rect x="148" y="555" width="8" height="10" fill="rgb(177,17,17)"/>
+<rect x="156" y="565" width="8" height="10" fill="rgb(177,17,17)"/>
+<rect x="148" y="575" width="8" height="10" fill="rgb(177,17,17)"/>
 
 </svg>
