@@ -5,60 +5,69 @@
 	.track{fill:none;stroke:rgb(177,17,17);stroke-width:32;stroke-linecap:round;stroke-linejoin:round;}
 </style>
 
-<!-- Kartbahn Teningen - 600m kompakte Outdoor-Strecke (3 Runden) -->
+<!-- Kartbahn Teningen - Kompakte 3-Runden Oval-Strecke -->
 
-<!-- Start/Ziel Gerade unten -->
-<path class="track" d="M 200,480 L 350,480"/>
+<!-- Äußere Runde -->
+<!-- Untere Gerade (Start/Ziel) -->
+<path class="track" d="M 180,450 L 420,450"/>
 
-<!-- Erste enge Rechtskurve -->
-<path class="track" d="M 350,480 Q 400,480 430,450 Q 460,420 480,380"/>
+<!-- Rechte untere Kurve -->
+<path class="track" d="M 420,450 Q 520,450 580,390 Q 640,330 640,250"/>
 
-<!-- Lange gerade nach oben rechts -->
-<path class="track" d="M 480,380 L 560,280"/>
+<!-- Rechte obere Kurve -->
+<path class="track" d="M 640,250 Q 640,170 580,110 Q 520,50 420,50"/>
 
-<!-- Enge Haarnadelkurve oben rechts -->
-<path class="track" d="M 560,280 Q 590,250 610,250 Q 630,250 640,270 Q 650,290 640,320"/>
+<!-- Obere Gerade -->
+<path class="track" d="M 420,50 L 180,50"/>
 
-<!-- Gerade zurück nach unten -->
-<path class="track" d="M 640,320 L 580,420"/>
+<!-- Linke obere Kurve -->
+<path class="track" d="M 180,50 Q 80,50 20,110 Q -40,170 -40,250"/>
 
-<!-- Weite Linkskurve unten rechts -->
-<path class="track" d="M 580,420 Q 560,460 520,480 Q 480,500 440,500"/>
+<!-- Linke untere Kurve zurück -->
+<path class="track" d="M -40,250 Q -40,330 20,390 Q 80,450 180,450"/>
 
-<!-- Lange Gerade nach links -->
-<path class="track" d="M 440,500 L 260,500"/>
+<!-- Mittlere Runde (etwas kleiner, nach innen versetzt) -->
+<!-- Untere Gerade -->
+<path class="track" d="M 220,400 L 380,400"/>
 
-<!-- Enge Haarnadelkurve unten links -->
-<path class="track" d="M 260,500 Q 220,500 200,480 Q 180,460 180,430 Q 180,400 200,380"/>
+<!-- Rechte Kurve -->
+<path class="track" d="M 380,400 Q 460,400 510,350 Q 560,300 560,230"/>
 
-<!-- Mittlere Gerade nach oben -->
-<path class="track" d="M 200,380 L 260,260"/>
+<!-- Obere Kurve -->
+<path class="track" d="M 560,230 Q 560,160 510,110 Q 460,60 380,60"/>
 
-<!-- Haarnadelkurve oben links -->
-<path class="track" d="M 260,260 Q 280,230 300,220 Q 320,210 340,230 Q 360,250 350,280"/>
+<!-- Obere Gerade -->
+<path class="track" d="M 380,60 L 220,60"/>
 
-<!-- Gerade zurück nach unten -->
-<path class="track" d="M 350,280 L 300,380"/>
+<!-- Linke Kurve -->
+<path class="track" d="M 220,60 Q 140,60 90,110 Q 40,160 40,230"/>
 
-<!-- Weite Kurve zur Innenschleife -->
-<path class="track" d="M 300,380 Q 280,410 300,440"/>
+<!-- Zurück unten -->
+<path class="track" d="M 40,230 Q 40,300 90,350 Q 140,400 220,400"/>
 
-<!-- Innere kleine Schleife - Gerade nach oben -->
-<path class="track" d="M 300,440 L 340,360"/>
+<!-- Innere kleine Runde -->
+<!-- Unten -->
+<path class="track" d="M 260,340 L 340,340"/>
 
-<!-- Innere Haarnadelkurve -->
-<path class="track" d="M 340,360 Q 360,340 380,340 Q 400,340 410,360 Q 420,380 410,400"/>
+<!-- Rechts -->
+<path class="track" d="M 340,340 Q 400,340 440,300 Q 480,260 480,210"/>
 
-<!-- Zurück nach unten zur Verbindung -->
-<path class="track" d="M 410,400 L 380,460"/>
+<!-- Oben -->
+<path class="track" d="M 480,210 Q 480,160 440,120 Q 400,80 340,80"/>
 
-<!-- Verbindung zur Start/Ziel -->
-<path class="track" d="M 380,460 Q 360,480 340,480 L 200,480"/>
+<!-- Oben Gerade -->
+<path class="track" d="M 340,80 L 260,80"/>
+
+<!-- Links -->
+<path class="track" d="M 260,80 Q 200,80 160,120 Q 120,160 120,210"/>
+
+<!-- Zurück -->
+<path class="track" d="M 120,210 Q 120,260 160,300 Q 200,340 260,340"/>
 
 <!-- Start/Ziel Markierung (Schachbrett) -->
-<rect x="198" y="467" width="14" height="26" fill="white" stroke="rgb(177,17,17)" stroke-width="2"/>
-<rect x="198" y="467" width="7" height="8.7" fill="rgb(177,17,17)"/>
-<rect x="205" y="475.7" width="7" height="8.7" fill="rgb(177,17,17)"/>
-<rect x="198" y="484.3" width="7" height="8.7" fill="rgb(177,17,17)"/>
+<rect x="178" y="437" width="14" height="26" fill="white" stroke="rgb(177,17,17)" stroke-width="2"/>
+<rect x="178" y="437" width="7" height="8.7" fill="rgb(177,17,17)"/>
+<rect x="185" y="445.7" width="7" height="8.7" fill="rgb(177,17,17)"/>
+<rect x="178" y="454.3" width="7" height="8.7" fill="rgb(177,17,17)"/>
 
 </svg>
