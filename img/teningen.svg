@@ -5,42 +5,60 @@
 	.track{fill:none;stroke:rgb(177,17,17);stroke-width:32;stroke-linecap:round;stroke-linejoin:round;}
 </style>
 
-<!-- Kartbahn Teningen - 600m Outdoor Track mit Höhenunterschied -->
+<!-- Kartbahn Teningen - 600m kompakte Outdoor-Strecke (3 Runden) -->
 
-<!-- Start/Ziel Gerade -->
-<path class="track" d="M 150,420 L 280,420"/>
+<!-- Start/Ziel Gerade unten -->
+<path class="track" d="M 200,480 L 350,480"/>
 
-<!-- Erste Rechtskurve bergauf -->
-<path class="track" d="M 280,420 Q 340,420 380,380 Q 420,340 450,300"/>
+<!-- Erste enge Rechtskurve -->
+<path class="track" d="M 350,480 Q 400,480 430,450 Q 460,420 480,380"/>
 
-<!-- Schnelle S-Kurve oben -->
-<path class="track" d="M 450,300 Q 480,260 520,240 Q 560,220 590,200"/>
+<!-- Lange gerade nach oben rechts -->
+<path class="track" d="M 480,380 L 560,280"/>
 
-<!-- Enge Rechtskurve -->
-<path class="track" d="M 590,200 Q 620,180 640,180 Q 660,180 670,200"/>
+<!-- Enge Haarnadelkurve oben rechts -->
+<path class="track" d="M 560,280 Q 590,250 610,250 Q 630,250 640,270 Q 650,290 640,320"/>
 
-<!-- Weite Linkskurve nach unten -->
-<path class="track" d="M 670,200 Q 680,220 680,260 Q 680,300 660,340"/>
+<!-- Gerade zurück nach unten -->
+<path class="track" d="M 640,320 L 580,420"/>
 
-<!-- Bergab Sektion -->
-<path class="track" d="M 660,340 Q 640,380 600,400 Q 560,420 520,430"/>
+<!-- Weite Linkskurve unten rechts -->
+<path class="track" d="M 580,420 Q 560,460 520,480 Q 480,500 440,500"/>
 
-<!-- Langsame Haarnadelkurve links -->
-<path class="track" d="M 520,430 Q 460,440 400,420 Q 340,400 300,360"/>
+<!-- Lange Gerade nach links -->
+<path class="track" d="M 440,500 L 260,500"/>
 
-<!-- Schnelle Links-Rechts Kombination -->
-<path class="track" d="M 300,360 Q 260,340 240,350 Q 220,360 220,380"/>
+<!-- Enge Haarnadelkurve unten links -->
+<path class="track" d="M 260,500 Q 220,500 200,480 Q 180,460 180,430 Q 180,400 200,380"/>
 
-<!-- Kurve vor der Ziellinie -->
-<path class="track" d="M 220,380 Q 220,400 200,410 Q 180,420 160,420"/>
+<!-- Mittlere Gerade nach oben -->
+<path class="track" d="M 200,380 L 260,260"/>
 
-<!-- Letztes Stück zur Ziellinie -->
-<path class="track" d="M 160,420 L 150,420"/>
+<!-- Haarnadelkurve oben links -->
+<path class="track" d="M 260,260 Q 280,230 300,220 Q 320,210 340,230 Q 360,250 350,280"/>
+
+<!-- Gerade zurück nach unten -->
+<path class="track" d="M 350,280 L 300,380"/>
+
+<!-- Weite Kurve zur Innenschleife -->
+<path class="track" d="M 300,380 Q 280,410 300,440"/>
+
+<!-- Innere kleine Schleife - Gerade nach oben -->
+<path class="track" d="M 300,440 L 340,360"/>
+
+<!-- Innere Haarnadelkurve -->
+<path class="track" d="M 340,360 Q 360,340 380,340 Q 400,340 410,360 Q 420,380 410,400"/>
+
+<!-- Zurück nach unten zur Verbindung -->
+<path class="track" d="M 410,400 L 380,460"/>
+
+<!-- Verbindung zur Start/Ziel -->
+<path class="track" d="M 380,460 Q 360,480 340,480 L 200,480"/>
 
 <!-- Start/Ziel Markierung (Schachbrett) -->
-<rect x="148" y="407" width="14" height="26" fill="white" stroke="rgb(177,17,17)" stroke-width="2"/>
-<rect x="148" y="407" width="7" height="8.7" fill="rgb(177,17,17)"/>
-<rect x="155" y="415.7" width="7" height="8.7" fill="rgb(177,17,17)"/>
-<rect x="148" y="424.3" width="7" height="8.7" fill="rgb(177,17,17)"/>
+<rect x="198" y="467" width="14" height="26" fill="white" stroke="rgb(177,17,17)" stroke-width="2"/>
+<rect x="198" y="467" width="7" height="8.7" fill="rgb(177,17,17)"/>
+<rect x="205" y="475.7" width="7" height="8.7" fill="rgb(177,17,17)"/>
+<rect x="198" y="484.3" width="7" height="8.7" fill="rgb(177,17,17)"/>
 
 </svg>
