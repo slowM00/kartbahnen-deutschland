@@ -12,7 +12,7 @@
     {name: 'Ralf Schumacher Kartbahn', href: 'ralf_schumacher.html', lat: 52.4130, lng: 9.7060, img: '../img/ralf-schumacher-layout.svg'}
   ];
 
-  const map = L.map('map', { scrollWheelZoom: false, attributionControl: false }).setView([51.0, 10.0], 6);
+  const map = L.map('map', { scrollWheelZoom: true, attributionControl: false }).setView([51.0, 10.0], 6);
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     attribution: ''
