@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Strecken - Kartbahnen Deutschland</title>
+    <link rel="stylesheet" href="../CSS/style.css?v=20251109">
+</head>
+<body>
+    <header>
+        <img src="../img/logo1.png" alt="Logo" style="height: 80px; margin-bottom: 10px;">
+        <img src="../img/Menu.svg" id="menuBtn" alt="Menu icon" style="height: 50px; margin-bottom: 10px; float: right; margin-top: 10px; margin-right: 20px; cursor: pointer;">
+    </header>
+    <div id="sideMenu">
+        <button id="closeMenuBtn" style="float:right; margin:10px;">X</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="strecken.html">Strecken</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Strecken</h1>
+        <div class="tracks-grid">
+            <a href="mskart.html" class="track-link">
+                <div class="track">
+                    <div style="width: 120px; height: 90px; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px auto; border-radius: 8px; box-shadow: 0 1px 6px rgba(0,0,0,0.12); background: transparent; overflow: hidden;">
+                        <canvas id="mskartCanvas" width="120" height="90" style="display: block; border-radius: 8px;"></canvas>
+                    </div>
+                    <script src="../js/filterRed.js"></script>
+                    <script>
+                      filterRedOnly('../img/kerpen.png', 'mskartCanvas');
+                      const ctx = document.getElementById('mskartCanvas').getContext('2d');
+                      ctx.imageSmoothingEnabled = true;
+                      ctx.imageSmoothingQuality = 'high';
+                    </script>
+                    <div class="track-name">MS Kart</div>
+                    <div class="location">Kerpen, NRW</div>
+                </div>
+            </a>
+            <a href="wittgenborn.html" class="track-link">
+                <div class="track">
+                    <img src="../img/wittgenborn.jpg" alt="Streckenlayout 2" class="track-layout" style="width:120px;height:auto;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;" />
+                    <div class="track-name">MSC Wittgenborn</div>
+                    <div class="location">Vogelsberg, Hessen</div>
+                </div>
+            </a>
+            <a href="prokart_raceland.html" class="track-link">
+                <div class="track">
+                    <img src="../img/Prokart_Raceland.svg" alt="Streckenlayout Prokart Raceland" class="track-layout" style="width:120px;height:auto;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;" />
+                    <div class="track-name">ProKart Raceland</div>
+                    <div class="location">Wackersdorf, Bayern</div>
+                </div>
+            </a>
+            <a href="ampfing.html" class="track-link">
+                <div class="track">
+                    <img src="../img/Ampfing.svg" alt="Streckenlayout Ampfing" class="track-layout" style="width:120px;height:auto;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;" />
+                    <div class="track-name">Kartshop Ampfing</div>
+                    <div class="location">Bayern</div>
+                </div>
+            </a>
+            <a href="teningen.html" class="track-link">
+                <div class="track">
+                    <img src="../img/Teningrot_red_range.png" alt="Streckenlayout Teningen" class="track-layout" style="width:120px;height:auto;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;" />
+                    <div class="track-name">Kartbahn Teningen</div>
+                    <div class="location">Baden-Württemberg</div>
+                </div>
+            </a>
+            <a href="straubing.html" class="track-link">
+                <div class="track">
+                    <img src="../img/Straubing_layout.svg" alt="Streckenlayout Straubing" class="track-layout" style="width:120px;height:auto;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;" />
+                    <div class="track-name">Kartbahn Straubing</div>
+                    <div class="location">Bayern</div>
+                </div>
+            </a>
+            <a href="ralf_schumacher.html" class="track-link">
+                <div class="track">
+                    <img src="../img/ralf-schumacher-layout.svg" alt="Streckenlayout Ralf Schumacher Kartbahn" class="track-layout" style="width:120px;height:auto;margin-bottom:10px;display:block;margin-left:auto;margin-right:auto;" />
+                    <div class="track-name">Ralf Schumacher Kartbahn</div>
+                    <div class="location">Niedersachsen</div>
+                </div>
+            </a>
+            
+        </div>
+    </main>
+    <script src="../js/menu.js?v=20251109"></script>
+</body>
+</html>
