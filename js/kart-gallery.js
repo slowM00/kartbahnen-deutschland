@@ -1,4 +1,4 @@
-// Kart Gallery Toggle Funktionalität
+
 function toggleKartGallery(galleryId) {
     const gallery = document.getElementById(galleryId);
     const button = event.target.closest('.kart-gallery-toggle');
@@ -17,12 +17,12 @@ function toggleKartGallery(galleryId) {
     }
 }
 
-// Event Listener für alle Toggle Buttons
+
 document.addEventListener('DOMContentLoaded', function() {
     const toggleButtons = document.querySelectorAll('.kart-gallery-toggle');
     
     toggleButtons.forEach(button => {
-        // Entferne onclick Attribut und verwende Event Listener
+
         const onclickAttr = button.getAttribute('onclick');
         if (onclickAttr) {
             const galleryId = onclickAttr.match(/'([^']+)'/)[1];
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            // Keyboard accessibility
+            // keyboard usw. 
             button.addEventListener('keydown', function(e) {
                 if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
@@ -58,3 +58,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+

@@ -1,4 +1,4 @@
-// Sliding menu logic
+
 function openMenu() {
     document.getElementById('sideMenu').classList.add('open');
 }
