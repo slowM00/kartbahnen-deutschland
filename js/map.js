@@ -12,11 +12,14 @@
     {name: 'Ralf Schumacher Kartbahn', href: 'ralf_schumacher.html', lat: 52.4130, lng: 9.7060}
   ];
 
-  const map = L.map('map', { scrollWheelZoom: false }).setView([51.0, 10.0], 6);
+  const map = L.map('map', { scrollWheelZoom: false, attributionControl: false }).setView([51.0, 10.0], 6);
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+    attribution: ''
   }).addTo(map);
+
+  L.control.attribution({ position: 'bottomleft', prefix: false }).addTo(map);
+  map.attributionControl.addAttribution('Karte: © OpenStreetMap-Mitwirkende, Basiskarte: © CARTO');
 
   tracks.forEach(t => {
     const m = L.circleMarker([t.lat, t.lng], {radius:10, color:'#b71c1c', fillColor:'#e53935', fillOpacity:0.95, weight:2}).addTo(map);

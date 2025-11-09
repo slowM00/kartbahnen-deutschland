@@ -245,3 +245,39 @@ h1 {
     color: #ffd7d7;
     text-decoration: underline;
 }
+
+.map-wrapper {
+    max-width: 1200px;
+    margin: 0 auto 28px auto;
+    padding: 8px 12px;
+    display: block;
+}
+.map-title {
+    color: #fff;
+    margin: 8px 6px 12px 6px;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgb(170,17,17);
+}
+#map {
+    position: relative;
+}
+#map::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(229,57,53,0.04), rgba(0,0,0,0));
+    mix-blend-mode: overlay;
+}
+.leaflet-control-attribution {
+    right: auto;
+    left: 8px;
+    font-size: 12px;
+    opacity: 0.95;
+}
+.leaflet-control-attribution a {
+    color: #ffd7d7;
+}
+.leaflet-tile {
+    filter: sepia(0.15) saturate(1.2) hue-rotate(-6deg) contrast(0.95) brightness(0.95);
+}
