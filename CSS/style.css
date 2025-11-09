@@ -206,3 +206,36 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+#map {
+    width: 100%;
+    max-width: 1200px;
+    height: 420px;
+    margin: 0 auto 18px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    border: 2px solid rgba(170,17,17,0.12);
+}
+.leaflet-container {
+    background: rgba(255,255,255,0.02);
+}
+.leaflet-control-zoom,
+.leaflet-control-attribution {
+    background: rgba(10,10,10,0.6);
+    color: #fff;
+}
+.leaflet-popup-content-wrapper {
+    background: rgba(30,30,30,0.95);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+.leaflet-popup-tip {
+    background: rgba(30,30,30,0.95);
+}
+.leaflet-popup-content a {
+    color: #ffdddd;
+    text-decoration: underline;
+}

@@ -1,6 +1,6 @@
 
 (function(){
-  if (typeof L === 'undefined') return; 
+  if (typeof L === 'undefined') return;
 
   const tracks = [
     {name: 'MS Kart', href: 'mskart.html', lat: 50.8820, lng: 6.7243},
@@ -12,21 +12,21 @@
     {name: 'Ralf Schumacher Kartbahn', href: 'ralf_schumacher.html', lat: 52.4130, lng: 9.7060}
   ];
 
-  
   const map = L.map('map', { scrollWheelZoom: false }).setView([51.0, 10.0], 6);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  
   tracks.forEach(t => {
-    const marker = L.marker([t.lat, t.lng]).addTo(map);
+    const m = L.circleMarker([t.lat, t.lng], {radius:10, color:'#e53935', fillColor:'#e53935', fillOpacity:0.95, weight:1}).addTo(map);
     const popup = `<strong><a href="${t.href}">${t.name}</a></strong><br><small>Koordinaten ungefähr</small>`;
-    marker.bindPopup(popup);
+    m.bindPopup(popup);
+    m.on('mouseover', () => m.openPopup());
+    m.on('mouseout', () => m.closePopup());
+    m.on('click', () => { window.location.href = t.href; });
   });
 
-  
-  const group = L.featureGroup(tracks.map(t => L.marker([t.lat, t.lng])));
+  const group = L.featureGroup(tracks.map(t => L.circleMarker([t.lat, t.lng])));
   if (tracks.length) map.fitBounds(group.getBounds().pad(0.25));
 })();
