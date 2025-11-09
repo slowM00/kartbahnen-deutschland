@@ -1,4 +1,4 @@
-
+// animationen, wenn es mal funktionieren würde
 function openMenu() {
     document.getElementById('sideMenu').classList.add('open');
 }

@@ -7,6 +7,8 @@
     <meta http-equiv="Expires" content="0">
     <title>Strecken - Kartbahnen Deutschland</title>
     <link rel="stylesheet" href="../CSS/style.css?v=20251109">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
     <header>
@@ -25,6 +27,8 @@
     </div>
     <main>
         <h1>Strecken</h1>
+        
+        <div id="map" style="width:100%;height:380px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.12);margin-bottom:18px;"></div>
         <div class="tracks-grid">
             <a href="mskart.html" class="track-link">
                 <div class="track">
@@ -88,5 +92,8 @@
         </div>
     </main>
     <script src="../js/menu.js?v=20251109"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/map.js?v=20251109"></script>
 </body>
 </html>

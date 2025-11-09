@@ -1,11 +1,9 @@
-/* Track Detail Page Styles */
 
-/* Smooth scrolling for anchor links */
 html {
     scroll-behavior: smooth;
 }
 
-/* Page Navigation */
+
 .page-navigation {
     background: rgba(170, 17, 17, 0.8);
     border-radius: 12px;
@@ -38,7 +36,7 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Image error handling */
+
 img {
     transition: opacity 0.3s ease;
 }
@@ -192,14 +190,14 @@ img[src*="template-placeholder"] {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
-    align-items: stretch; /* Alle Elemente gleich hoch */
+    align-items: stretch;
 }
 
 .kart-types-container {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: stretch; /* Alle Kart-Boxen gleich hoch */
+    align-items: stretch;
 }
 
 .kart-type {
@@ -207,7 +205,7 @@ img[src*="template-placeholder"] {
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid rgba(170, 17, 17, 0.3);
-    min-height: 200px; /* Mindesthöhe für einheitliche Größe */
+    min-height: 200px;
     display: flex;
     flex-direction: column;
 }
@@ -222,7 +220,7 @@ img[src*="template-placeholder"] {
 .spec-grid {
     display: grid;
     gap: 0.8rem;
-    flex-grow: 1; /* Füllt verfügbaren Platz aus */
+    flex-grow: 1;
 }
 
 .spec-item {
@@ -405,7 +403,7 @@ img[src*="template-placeholder"] {
     border-bottom: none;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .page-navigation {
         padding: 0.8rem;
