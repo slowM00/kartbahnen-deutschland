@@ -14,12 +14,12 @@
 
   const map = L.map('map', { scrollWheelZoom: false }).setView([51.0, 10.0], 6);
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
   }).addTo(map);
 
   tracks.forEach(t => {
-    const m = L.circleMarker([t.lat, t.lng], {radius:10, color:'#e53935', fillColor:'#e53935', fillOpacity:0.95, weight:1}).addTo(map);
+    const m = L.circleMarker([t.lat, t.lng], {radius:10, color:'#b71c1c', fillColor:'#e53935', fillOpacity:0.95, weight:2}).addTo(map);
     const popup = `<strong><a href="${t.href}">${t.name}</a></strong><br><small>Koordinaten ungefähr</small>`;
     m.bindPopup(popup);
     m.on('mouseover', () => m.openPopup());

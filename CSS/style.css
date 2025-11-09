@@ -208,34 +208,40 @@ h1 {
 }
 
 
-#map {
+ #map {
     width: 100%;
     max-width: 1200px;
     height: 420px;
     margin: 0 auto 18px auto;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
-    border: 2px solid rgba(170,17,17,0.12);
+    box-shadow: 0 10px 34px rgba(0,0,0,0.45);
+    border: 3px solid rgba(229,57,53,0.15);
 }
 .leaflet-container {
-    background: rgba(255,255,255,0.02);
+    background: rgba(10,10,10,0.04);
 }
 .leaflet-control-zoom,
 .leaflet-control-attribution {
-    background: rgba(10,10,10,0.6);
+    background: rgba(20,20,20,0.65);
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid rgba(229,57,53,0.12);
+}
+.leaflet-control-zoom a {
     color: #fff;
 }
 .leaflet-popup-content-wrapper {
-    background: rgba(30,30,30,0.95);
+    background: rgba(24,24,24,0.98);
     color: #fff;
     border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.5);
+    border: 1px solid rgba(229,57,53,0.08);
 }
 .leaflet-popup-tip {
-    background: rgba(30,30,30,0.95);
+    background: rgba(24,24,24,0.98);
 }
 .leaflet-popup-content a {
-    color: #ffdddd;
+    color: #ffd7d7;
     text-decoration: underline;
 }
