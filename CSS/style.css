@@ -281,3 +281,16 @@ h1 {
 .leaflet-tile {
     filter: sepia(0.15) saturate(1.2) hue-rotate(-6deg) contrast(0.95) brightness(0.95);
 }
+
+
+.leaflet-marker-icon.track-marker-icon {
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    border: 3px solid #e53935;
+    background-color: rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+.leaflet-control-attribution { display: none !important; }

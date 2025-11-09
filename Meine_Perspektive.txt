@@ -12,6 +12,7 @@ Herausforderungen / was macht meine Website besonders:
     Was meine Website aber besonders macht sind die übersichtlichen Informationen zu allen Karts, die mit einem einheitlichem Design dargestellt werden. 
     Die einheitlichen Informationen sind einfach zu vergleichen und man kann sich eine passende Strecke raussuchen, auf der man fahren möchte.
     Auch die aufwändigen Animationen wurden mit JS umgesetzt.
+    Eine weitere aufwändige Sache, die mit JavaScript umgesetzt wurde ist die Karte, die die Position jeder Kartstrecke übersichtlich anzeigt.
     Im nachhinein war eigentlich die Nutzungsrechte für die Bilder zu bekommen am schwierigsten, weil man dafür die Firmen kontaktieren musste.
 
  
